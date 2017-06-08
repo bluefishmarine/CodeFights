@@ -40,18 +40,7 @@
 //A string, reformatted so that dashes divide it into groups with a length of k or shorter.
 
 function stringReformatting(s, k) {
-  var increment = k+1;
-  var str = string.replace(/-/gi,"").split("");
-  var start = str.length%k;
-  if (start>0){
-    var x = start;
-  }else{
-    x = start+k;
-  }
-  for (x; x<str.length; x+=increment){
-    str.splice(x,0,"-");
-  }
-  return str.join("");
+
 }
 
 stringReformatting("2-4a0r7-45",5);
